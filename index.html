@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Rhoge | Portfolio</title>
+        <title>Landing Page</title>
         <link rel="stylesheet" href="style.css" />
         <link
             href="https://unpkg.com/aos@2.3.1/dist/aos.css"
@@ -15,19 +15,27 @@
         />
     </head>
     <body>
+        <div id="container">
+            <nav data-aos="fade-down" data-aos-duration="2000">
+                <ul>
+                    <li id="Active">
+                        <a href="#container">Home</a>
+                    </li>
+                    <li id="Active"><a href="#skills">Skills</a></li>
+                    <li id="Active"><a href="#projects">Projects</a></li>
+                    <li id="Active"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
             <header data-aos="fade-right" data-aos-duration="2000">
-                <nav>
-                    <ul>
-                        <li id="Active"><a href="#container">Home</a></li>
-                        <li id="Active"><a href="#skills">Skills</a></li>
-                        <li id="Active"><a href="#projects">Projects</a></li>
-                        <li id="Active"><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+                <div class="name-container">
+                    <p>Hi! I'm Rhoge Vhir Diaz.</p>
+                </div>
             </header>
 
             <div data-aos="fade-up" data-aos-duration="2000" class="hero-text">
-                <h1>A web developer helping clients establish their brands</h1>
+                <h1>
+                    A website developer helping clients establish their brands
+                </h1>
             </div>
             <div data-aos="fade-left" data-aos-duration="2000" class="details">
                 <ul>
@@ -102,21 +110,17 @@
                 <div class="image-wrapper">
                     <img src="/assets/images/green-bristle.png" alt="" />
                     <p>Green Bristle: A basic E-Commerce App</p>
-                    <a href="/green-bristle/index.html" target="_blank"
-                        ><button>Visit</button></a
-                    >
-                </div>
-                <div class="image-wrapper">
-                    <img src="/assets/images/dc-clone.png" alt="" />
-                    <p>Discord Clone: A much worse version</p>
-                    <a href="https://rhoge-discord-clone.vercel.app/"
-                        ><button>Visit</button></a
-                    >
+                    <a href=""><button>Open</button></a>
                 </div>
                 <div class="image-wrapper">
                     <img src="/assets/images/green-bristle.png" alt="" />
                     <p>Green Bristle: A basic E-Commerce App</p>
-                    <a href=""><button>Visit</button></a>
+                    <a href=""><button>Open</button></a>
+                </div>
+                <div class="image-wrapper">
+                    <img src="/assets/images/green-bristle.png" alt="" />
+                    <p>Green Bristle: A basic E-Commerce App</p>
+                    <a href=""><button>Open</button></a>
                 </div>
             </div>
             <div class="end-text" id="contact">
@@ -166,13 +170,5 @@
         <script>
             AOS.init();
         </script>
-        <script>
-            window.si =
-                window.si ||
-                function () {
-                    (window.siq = window.siq || []).push(arguments);
-                };
-        </script>
-        <script defer src="/_vercel/speed-insights/script.js"></script>
     </body>
 </html>
