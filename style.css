@@ -248,8 +248,7 @@ nav > ul > a {
 footer {
     display: flex;
     justify-content: space-between;
-    max-width: 95%;
-    margin: auto;
+    max-width: auto;
 }
 
 footer .name {
@@ -349,5 +348,20 @@ footer ul {
     .image-wrapper > p,
     .image-wrapper > a > button {
         font-size: 1.5rem;
+    }
+
+    .end-1,
+    .end-2 {
+        font-size: 2rem;
+    }
+
+    .links > ul {
+        background-color: blue;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .links > ul > li > a {
+        font-size: small;
     }
 }
