@@ -83,6 +83,7 @@ nav > ul > a {
     justify-content: center;
     gap: 1rem;
     padding: 0;
+    align-items: center;
 }
 
 .details li {
@@ -91,6 +92,7 @@ nav > ul > a {
     border-style: none;
     padding: 0.5rem 0.8rem;
     background-color: var(--accent);
+    text-align: center;
 }
 
 /* skillset */
@@ -356,7 +358,6 @@ footer ul {
     }
 
     .links > ul {
-        background-color: blue;
         display: flex;
         flex-wrap: wrap;
     }
