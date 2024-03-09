@@ -120,14 +120,14 @@ nav > ul > a {
 
 .skill-btn > img {
     aspect-ratio: 1/1;
-    width: 3rem;
+    width: auto;
 }
 
 /* skills: specifics */
 #github,
 #postman {
-    height: 30px;
-    width: 30px;
+    height: 2rem;
+    width: 2rem;
 }
 
 /* text style */
@@ -324,20 +324,20 @@ footer ul {
 
 @media (max-width: 385px) {
     .hero-text {
-        width: 100vw;
+        width: 100%;
         margin-left: 10%;
     }
     .details {
-        width: 100vw;
+        width: 100%;
         margin-left: 7%;
     }
 
     .skill-container {
-        width: 100vw;
+        width: 100%;
     }
 
     .projects {
-        width: 100vw;
+        width: 100%;
         margin-left: 10%;
     }
 
