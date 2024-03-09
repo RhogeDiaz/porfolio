@@ -51,7 +51,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 3.5rem;
-    max-width: 30%;
+    /* max-width: 30%; */
     padding: 1rem 1.5rem;
     border-radius: 50px;
     cursor: pointer;
@@ -289,14 +289,41 @@ footer ul {
 
 /* for smartphones */
 @media (max-width: 840px) {
-    .hero-text p {
+    .hero-text h1 {
         font-size: 2.5rem;
         margin-top: 20%;
-        padding: 0 auto;
-        max-width: 90%;
+        /* padding: 0 auto; */
+        /* max-width: 90%; */
     }
 
-    header ul {
+    nav ul {
+        max-width: 80%;
+    }
+
+    .details {
+        margin-bottom: 20%;
+    }
+
+    .details ul {
+        gap: 0.1rem;
+    }
+
+    .image-wrapper > p,
+    .image-wrapper > a > button {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+        margin-top: 20%;
+        color: pink;
+        /* padding: 0 auto; */
+        /* max-width: 90%; */
+    }
+
+    nav ul {
         max-width: 80%;
     }
 
