@@ -1,0 +1,77 @@
+/* for smartphones */
+
+@media (max-width: 1050px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    header > .name-container {
+        margin-top: 20%;
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        padding: 1rem 3rem;
+        font-weight: 600;
+    }
+
+    header > .name-container > p {
+        margin-top: 20%;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 840px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text > h1 {
+        font-size: 2.5rem;
+        padding: 0 auto;
+        max-width: 90%;
+    }
+
+    nav {
+        max-width: 100%;
+        justify-content: center;
+        left: auto;
+        right: auto;
+    }
+
+    nav > ul {
+        gap: 1rem;
+    }
+
+    .details {
+        margin-bottom: 20%;
+    }
+
+    .details > li {
+        gap: 0.1rem;
+    }
+
+    .image-wrapper > p,
+    .image-wrapper > a > button {
+        font-size: 1.5rem;
+    }
+
+    .skill-container > ul > li {
+        margin-right: 39px;
+    }
+
+    .end-1,
+    .end-2 {
+        font-size: 2rem;
+    }
+
+    .links > ul > li > a {
+        font-size: smaller;
+    }
+}

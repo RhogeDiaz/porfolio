@@ -46,20 +46,45 @@ nav {
 }
 
 nav > ul {
-    background-color: var(--accent);
+    background-color: hsla(0, 0%, 100%, 0.393);
+    /* background-color: var(--accent); */
     display: flex;
     justify-content: center;
     gap: 3.5rem;
     padding: 1rem 1.5rem;
     border-radius: 50px;
     cursor: pointer;
+    backdrop-filter: blur(10px);
     transition: 200ms ease-in-out;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    align-items: center;
 }
 
-nav > ul > a {
+nav > ul > li > a {
     text-decoration-line: none;
     color: black;
+    z-index: 3;
+    transition: 300ms ease-in-out;
 }
+
+#homeNav:hover,
+#skillsNav:hover,
+#projectsNav:hover,
+#contactNav:hover {
+    text-decoration: underline;
+}
+
+/* #backdrop {
+    background-color: var(--gray);
+    position: absolute;
+    z-index: -1;
+    top: 1.1rem;
+    left: 35rem;
+    width: 6rem;
+    height: 3.2rem;
+    border-radius: 50px;
+    transition: 300ms ease-in;
+} */
 
 /* hero */
 .hero-text {
@@ -294,82 +319,4 @@ footer ul {
 .links > ul {
     display: flex;
     flex-wrap: wrap;
-}
-
-/* for smartphones */
-
-@media (max-width: 1050px) {
-    header {
-        display: flex;
-        justify-content: center;
-    }
-
-    header > .name-container {
-        margin-top: 20%;
-        display: flex;
-        align-items: center;
-        margin-left: 0;
-        padding: 1rem 3rem;
-        font-weight: 600;
-    }
-
-    header > .name-container > p {
-        margin-top: 20%;
-        display: flex;
-        align-items: center;
-        font-weight: 600;
-        font-size: 1.5rem;
-        text-align: center;
-    }
-}
-
-@media (max-width: 840px) {
-    #container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-text > h1 {
-        font-size: 2.5rem;
-        padding: 0 auto;
-        max-width: 90%;
-    }
-
-    nav {
-        max-width: 100%;
-        justify-content: center;
-        left: auto;
-        right: auto;
-    }
-
-    nav > ul {
-        gap: 1rem;
-    }
-
-    .details {
-        margin-bottom: 20%;
-    }
-
-    .details > li {
-        gap: 0.1rem;
-    }
-
-    .image-wrapper > p,
-    .image-wrapper > a > button {
-        font-size: 1.5rem;
-    }
-
-    .skill-container > ul > li {
-        margin-right: 39px;
-    }
-
-    .end-1,
-    .end-2 {
-        font-size: 2rem;
-    }
-
-    .links > ul > li > a {
-        font-size: smaller;
-    }
 }

@@ -4,7 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Rhoge Portfolio</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="/assets/css/responsive.css" />
         <link
             href="https://unpkg.com/aos@2.3.1/dist/aos.css"
             rel="stylesheet"
@@ -14,15 +15,25 @@
             rel="stylesheet"
         />
         <link rel="image_src" href="/assets/images/thumbnail2.png" />
+        <script src="/main.js" defer></script>
     </head>
     <body>
         <div id="container">
             <nav data-aos="fade-down" data-aos-duration="2000">
+                <div id="backdrop"></div>
                 <ul>
-                    <li id="Active"><a href="#container">Home</a></li>
-                    <li id="Active"><a href="#skills">Skills</a></li>
-                    <li id="Active"><a href="#projects">Projects</a></li>
-                    <li id="Active"><a href="#contact">Contact</a></li>
+                    <li id="homeNav" onclick="activeNav(35)">
+                        <a href="#container">Home</a>
+                    </li>
+                    <li onclick="activeNav(40.8)">
+                        <a id="skillsNav" href="#skills">Skills</a>
+                    </li>
+                    <li onclick="activeNav(47)">
+                        <a id="projectsNav" href="#projects">Projects</a>
+                    </li>
+                    <li onclick="activeNav(53.8)">
+                        <a id="contactNav" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </nav>
             <header data-aos="fade-right" data-aos-duration="2000">
@@ -126,27 +137,25 @@
             </div>
             <div class="end-text" id="contact">
                 <p class="end-1">Let's work together.</p>
-                <p class="end-2">Get in touch.</p>
+                <a href="contact.html" class="end-2">Get in touch.</a>
             </div>
             <footer>
                 <div class="name">
                     <p>Rhoge Diaz. 2024</p>
                 </div>
                 <div class="btn-container">
-                    <button
-                        onclick=""
-                        data-aos="fade-up"
-                        data-aos-duration="2000"
+                    <a href="contact.html"
+                        ><button data-aos="fade-up" data-aos-duration="2000">
+                            Contact Me
+                        </button></a
                     >
-                        Contact Me
-                    </button>
                 </div>
 
                 <div class="links">
                     <ul>
                         <li>
                             <a
-                                href="https://www.facebook.com/rhogevhir.diaz/"
+                                href="https://www.facebook.com/profile.php?id=61557696951179"
                                 target="_blank"
                                 >Facebook</a
                             >
@@ -165,7 +174,7 @@
                 </div>
             </footer>
         </div>
-        <script type="module" src="/main.js"></script>
+
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
