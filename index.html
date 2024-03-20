@@ -15,7 +15,7 @@
             rel="stylesheet"
         />
         <link rel="image_src" href="/assets/images/thumbnail2.png" />
-        <script src="/main.js" defer></script>
+        <script src="/assets/scripts/main.js" defer></script>
     </head>
     <body>
         <div id="container">
@@ -35,6 +35,9 @@
                         <a id="contactNav" href="#contact">Contact</a>
                     </li>
                 </ul>
+                <button class="dm" onclick="darkMode()">
+                    <input type="checkbox" class="theme-checkbox" />
+                </button>
             </nav>
             <header data-aos="fade-right" data-aos-duration="2000">
                 <div class="name-container">
@@ -43,7 +46,7 @@
             </header>
 
             <div data-aos="fade-up" data-aos-duration="2000" class="hero-text">
-                <h1>
+                <h1 id="aText">
                     A website developer helping clients establish their brands
                 </h1>
             </div>
@@ -67,30 +70,48 @@
                 <p>Skills</p>
                 <ul>
                     <li>
-                        <img src="/assets/images/css.svg" alt="CSS" />
+                        <img
+                            class="an-image"
+                            src="/assets/images/css.svg"
+                            alt="CSS"
+                        />
                         <p>CSS 3</p>
                     </li>
                     <li>
-                        <img src="/assets/images/html.svg" alt="HTML" />
+                        <img
+                            class="an-image"
+                            src="/assets/images/html.svg"
+                            alt="HTML"
+                        />
                         <p>HTML 5</p>
                     </li>
                     <li>
                         <img
+                            class="an-image"
                             src="/assets/images/javascript.svg"
                             alt="Javascript"
                         />
                         <p>JavaScript</p>
                     </li>
                     <li>
-                        <img src="/assets/images/react.svg" alt="React" />
+                        <img
+                            class="an-image"
+                            src="/assets/images/react.svg"
+                            alt="React"
+                        />
                         <p>React</p>
                     </li>
                     <li>
-                        <img src="/assets/images/git.svg" alt="git" />
+                        <img
+                            class="an-image"
+                            src="/assets/images/git.svg"
+                            alt="git"
+                        />
                         <p>Git</p>
                     </li>
                     <li>
                         <img
+                            class="an-image"
                             src="/assets/images/github.svg"
                             alt="github"
                             id="github"
@@ -98,11 +119,16 @@
                         <p>Github</p>
                     </li>
                     <li>
-                        <img src="/assets/images/npm.svg" alt="NPM" />
+                        <img
+                            class="an-image"
+                            src="/assets/images/npm.svg"
+                            alt="NPM"
+                        />
                         <p>NPM</p>
                     </li>
                     <li>
                         <img
+                            class="an-image"
                             src="/assets/images/postman.svg"
                             alt="Postman"
                             id="postman"
@@ -120,17 +146,29 @@
                 <p>Projects</p>
 
                 <div class="image-wrapper">
-                    <img src="/assets/images/green-bristle.png" alt="" />
+                    <img
+                        class="an-image"
+                        src="/assets/images/green-bristle.png"
+                        alt=""
+                    />
                     <p>Green Bristle: A basic E-Commerce App</p>
                     <a href=""><button>Open</button></a>
                 </div>
                 <div class="image-wrapper">
-                    <img src="/assets/images/green-bristle.png" alt="" />
+                    <img
+                        class="an-image"
+                        src="/assets/images/green-bristle.png"
+                        alt=""
+                    />
                     <p>Green Bristle: A basic E-Commerce App</p>
                     <a href=""><button>Open</button></a>
                 </div>
                 <div class="image-wrapper">
-                    <img src="/assets/images/green-bristle.png" alt="" />
+                    <img
+                        class="an-image"
+                        src="/assets/images/green-bristle.png"
+                        alt=""
+                    />
                     <p>Green Bristle: A basic E-Commerce App</p>
                     <a href=""><button>Open</button></a>
                 </div>
@@ -145,10 +183,14 @@
                 </div>
                 <div class="btn-container">
                     <a href="contact.html"
-                        ><button data-aos="fade-up" data-aos-duration="2000">
+                        ><button
+                            onclick=""
+                            data-aos="fade-up"
+                            data-aos-duration="2000"
+                        >
                             Contact Me
-                        </button></a
-                    >
+                        </button>
+                    </a>
                 </div>
 
                 <div class="links">

@@ -1,4 +1,9 @@
-export default function $(selector) {
+function darkMode() {
+    document.body.classList.toggle('dark');
+    document.querySelectorAll('img').forEach(img => img.classList.toggle('dark-img'));
+}
+
+function $(selector) {
     return document.querySelector(selector);
 }
 
